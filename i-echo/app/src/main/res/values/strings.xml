@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">I-echo</string>
+    <string name="app_nameexpanded">"I-echo: Communications Center"</string>
+
+
+    <string name="string_empty">""</string>
+    <string name="string_protomsg">ProtMsgTag</string>
+    <string name="string_protodata">ProtDataTag</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_title">I-echo</string>
+    <string name="string_wifi">WiFi</string>
+    <string name="string_skype">Skype</string>
+    <string name="string_busy">"Busy             "</string>
+    <string name="string_phone">Phone</string>
+    <string name="string_roaming">Roaming</string>
+    <string name="string_driving">"Driving    "</string>
+    <string name="string_sleeping">"Sleeping "</string>
+    <string name="string_autoanswer">AutoAnswer</string>
+    <string name="string_action">"Action"</string>
+    <string name="string_record">"Record"</string>
+    <string name="string_send">"Send"</string>
+    <string name="string_playing">"Playing"</string>
+    <string name="string_starting">"Hi, let's get started"</string>
+    <string name="string_thatsrigtht">"Hi, that's right!"</string>
+
+    <string name="string_voicemessagefrom">"Voice message from: "</string>
+    <string name="string_existapp">Exit the application?</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_ok">OK</string>
+    <string name="string_networknotavailable">"Network unavailable, please try later"</string>
+    <string name="string_unknownserver">"Unknown server address"</string>
+    <string name="string_couldnotconnect">"Could not connect to server"</string>
+    <string name="string_notconnectserver">"Not connected to the server"</string>
+    <string name="string_nosdfile">"Failed to access SD file"</string>
+    <string name="string_notregistered">"Failed to register"</string>
+    <string name="string_nocalledparty">"Called party not available"</string>
+    <string name="string_typemessage">"Please type in a message"</string>
+    <string name="string_messagesent">"Message sent"</string>
+    <string name="string_messagenotsent">"Message cannot be sent"</string>
+    <string name="string_recordandsend">"Press to record, then release to send"</string>
+    <string name="string_calledpartynotreceive">"Called party cannot receive"</string>
+    <string name="string_nomethodsavailable">"No communications method available"</string>
+    <string name="string_voicemessagesent">"Voice message sent"</string>
+    <string name="string_notsavesdfile">"Cannot save to SD file"</string>
+    <string name="string_cannotconnectudp">"Cannot connect to server (UDP)"</string>
+    <string name="string_audiorecordererror">"Audio recorder error"</string>
+    <string name="string_noaccesssdfile">"Cannot access internal SD file"</string>
+    <string name="string_noaudiorecorded">"Nothing recorded, try again..."</string>
+    <string name="string_iechoserverid">"I-echoServer"</string>
+    <string name="string_end">*******END*</string>
+    <string name="string_serverip">(ddd.ddd.ddd.ddd): </string>
+    <string name="string_configbin">/echoData/config.bin</string>
+    <string name="string_skypeurl">com.skype.raider</string>
+    <string name="string_skypemain">com.skype.raider.Main</string>
+    <string name="string_trymessage">Type message...</string>
+    <string name="string_cmannounce">"Contact request by: "</string>
+    <string name="string_messagefrom">Message from: </string>
+    <string name="string_myemail">My email...</string>
+    <string name="string_sendemail">"Send mail using..."</string>
+    <string name="string_emailnotsupported">"Email is not supported!"</string>
+    <string name="string_phonenotsupported">"Phone is not supported!"</string>
+    <string name="string_voipnotsupported">"Skype is not supported!"</string>
+    <string name="string_loading">"loading"</string>
+    <string name="string_row_cm_image">CM method icon</string>
+    <string name="string_row_left_image">Display left icon</string>
+    <string name="string_row_right_image">Display right icon</string>
+    <string name="string_text_message">"(Text)"</string>
+    <string name="string_voice_message">"(Voice)"</string>
+    <string name="string_ptt_message">"(Voice Chat)"</string>
+    <string name="string_email_message">"(Email)"</string>
+    <string name="string_phone_call">"(Phone)"</string>
+    <string name="string_skype_call">"(Skype)"</string>
+    <string name="string_cm_content">"Container holding com methods list"</string>
+    <string name="string_ip_icon">"Icon for IP address"</string>
+    <string name="string_italk">"I-Talk"</string>
+    <string name="string_utalk">"U-Talk"</string>
+    <string name="string_chatcallreceived">"Receiving call&#8230; Press to record, then release to send"</string>
+    <string name="string_chatcallcompleted">"Call completed&#8230;"</string>
+
+
+</resources>

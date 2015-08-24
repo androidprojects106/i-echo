@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent"
+android:focusable="false"
+android:clickable="false"
+android:focusableInTouchMode="false">
+    <TextView
+        android:id="@+id/method_entry2"
+        android:textSize="20sp"
+        android:layout_width="400dp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:textColor="@android:color/black"/>
+
+    <ImageView
+        android:id="@+id/label_icon32"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/transparent"
+        android:layout_toStartOf="@+id/label_icon22"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="false"
+        android:focusable="false">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/label_icon22"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/transparent"
+        android:layout_toStartOf="@+id/label_icon12"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="false"
+        android:focusable="false">
+    </ImageView>
+
+    <ImageView
+    android:id="@+id/label_icon12"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:src="@drawable/transparent"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="5dp"
+    android:layout_gravity="center"
+    android:baselineAlignBottom="false"
+    android:focusable="false">
+    </ImageView>
+</RelativeLayout>

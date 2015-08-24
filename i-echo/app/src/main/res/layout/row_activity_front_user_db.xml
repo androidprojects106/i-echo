@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:focusable="false"
+android:clickable="false" >
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_alignParentStart="true"
+        android:layout_width="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_toEndOf="@+id/user_id"
+        android:layout_toStartOf="@+id/user_lookup"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:gravity="start|center_vertical"
+        android:scrollHorizontally="true" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/user_lookup"
+        android:layout_alignParentEnd="true"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_width"
+        android:src="@drawable/expand005"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center_vertical"
+        android:baselineAlignBottom="false" >
+    </ImageView>
+</RelativeLayout>

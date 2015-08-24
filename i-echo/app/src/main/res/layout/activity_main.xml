@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/container_appview"
+    android:background="@android:color/white">
+
+    <!-- container for checkboxes of status variables of the user and phone -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height= "84dp"
+        android:id="@+id/container_frameStatus"
+        android:longClickable="false">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_wifi"
+            android:id="@+id/cbWiFi"
+            android:checked="true"
+            android:textSize="10sp"
+            android:layout_gravity="start|top"
+            android:clickable="false"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:id="@+id/cbVoipSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_skype"
+            android:layout_gravity="start|center_vertical"
+            android:checked="true"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_busy"
+            android:id="@+id/cbBusy"
+            android:layout_gravity="end|bottom"
+            android:checked="true"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:id="@+id/cbPhoneSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_phone"
+            android:layout_gravity="start|bottom"
+            android:checked="false"
+            android:textSize="10sp"
+            android:clickable="false"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_roaming"
+            android:id="@+id/cbHomeRoam"
+            android:layout_gravity="center_horizontal|top"
+            android:checked="false"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_driving"
+            android:id="@+id/cbDrive"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:id="@+id/cbSleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_sleeping"
+            android:layout_gravity="center_horizontal|bottom"
+            android:checked="false"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:textColor="@android:color/black" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_autoanswer"
+            android:id="@+id/cbAutoAnswer"
+            android:layout_gravity="end|top"
+            android:checked="false"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:textColor="@android:color/black" />
+    </FrameLayout>
+    <!-- fragment holding saved history of communications: text, voice messages, calls -->
+    <FrameLayout
+        android:id="@+id/container_display_fragment"
+        android:layout_below="@+id/container_frameStatus"
+        android:layout_above="@+id/container_bottom"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+    </FrameLayout>
+    <!-- container for several things: Echo probe button, and action buttons -->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
+        <!-- container for action button, send button, and echo probe buttons -->
+        <LinearLayout
+            android:id="@+id/linearLayoutBottom"
+            android:orientation="horizontal"
+            android:layout_above="@+id/btnProbe"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_weight="2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/textMsg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:hint="@string/string_trymessage"
+                    android:background="@android:color/transparent"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:textColor="#ff272727"/>
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:id="@+id/progressBar"
+                    android:layout_alignParentBottom="true"
+                    android:indeterminate="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#cc98ffc1"
+                    android:progressDrawable="@drawable/a_progress_bar_green" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnAction"
+                android:layout_marginStart="5dp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/string_action"
+                android:textSize="18sp"
+                android:background="#ff2ae9ff"
+                android:clickable="true"
+                android:backgroundTintMode="multiply"
+                android:elegantTextHeight="true"
+                android:enabled="true" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnProbe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:textAllCaps="false"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/string_title"
+            android:textSize="30sp"
+            android:background="#ff2ae9ff"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <!-- container for Com Methods list and announcement text -->
+    <!-- android:background="#A6424242" -->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:id="@+id/container_bottom" >
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmAnnounce"
+            android:background="#00000000"
+            android:textColor="#000000"
+            android:layout_above="@+id/cmListView"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="start"/>
+        <ListView
+            android:id="@+id/cmListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="15sp"
+            android:paddingBottom="15sp"
+            android:minLines="1"
+            android:maxLines="4"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:choiceMode="singleChoice"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:nestedScrollingEnabled="true"
+            android:textSize="20sp"
+            android:divider="#6a7c7d77"
+            android:background="@drawable/a_border_cmlist">
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6424242"
+        android:visibility="gone"
+        android:id="@+id/container_button_ptt" >
+        <Button
+            android:id="@+id/btnPtt"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:contentDescription="@string/string_italk"
+            android:text="@string/string_italk"
+            android:background = "@drawable/a_button_rounded"
+            android:textSize="48sp"
+            android:clickable="true"/>
+        <Button
+            android:id="@+id/btnYouPtt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPtt"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAllCaps="false"
+            android:contentDescription="@string/string_utalk"
+            android:background = "@android:color/holo_blue_bright"
+            android:text="@string/string_utalk"
+            android:textSize="36sp"
+            android:textColor="@android:color/black"
+            android:clickable="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

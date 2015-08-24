@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:focusable="false"
+    android:clickable="false"
+    android:focusableInTouchMode="false">
+    <TextView
+        android:id="@+id/centeredcm"
+        android:textSize="20sp"
+        android:layout_width="400dp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:singleLine="true"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/centerinfo"
+        android:textSize="18sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="#80ff0000"/>
+</LinearLayout>

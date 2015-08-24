@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- fill stroke color  -->
+    <stroke
+        android:width="1dip"
+        android:color="@android:color/transparent" />
+
+    <corners
+        android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp" />
+
+    <!-- gradient color   -->
+    <gradient
+        android:angle="-270"
+        android:endColor="#fff4ff49"
+        android:centerColor="#ffc1ff6b"
+        android:startColor="@android:color/holo_green_light" />
+
+
+</shape>

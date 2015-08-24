@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:focusable="false"
+    android:clickable="false"
+    android:focusableInTouchMode="false">
+    <TextView
+        android:id="@+id/method_entry"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Text Message"
+        android:textColor="#80ff0000"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/callin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="In"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_toRightOf="@+id/method_entry"
+        android:layout_toEndOf="@+id/method_entry"
+        android:textColor="#d5858585" />
+
+    <ImageView
+        android:id="@+id/arrowin"
+        android:layout_width="20dp"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow_in"
+        android:layout_toRightOf="@+id/callin"
+        android:layout_toEndOf="@+id/callin"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="false"
+        android:focusable="false">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/callout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Out"
+        android:textSize="28sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toLeftOf="@+id/arrowout"
+        android:layout_toStartOf="@+id/arrowout"
+        android:textColor="#d5858585" />
+
+    <ImageView
+        android:id="@+id/arrowout"
+        android:layout_width="20dp"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow_out"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </ImageView>
+</RelativeLayout>

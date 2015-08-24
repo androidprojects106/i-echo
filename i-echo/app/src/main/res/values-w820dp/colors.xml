@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#aaaaaaaa</color>
+    <color name="sep_gray">#55aaaaaa</color>
+    <color name="black">#ff000000</color>
+
+    <color name="bbutton_edittext_border">#ccc</color>
+    <color name="bbutton_edittext_disabled">#ffe0e0e0</color>
+
+    <color name="bbutton_primary">#ff428bca</color>
+    <color name="bbutton_primary_edge">#ff357ebd</color>
+    <color name="bbutton_primary_pressed">#ff3276b1</color>
+    <color name="bbutton_primary_pressed_edge">#ff285e8e</color>
+    <color name="bbutton_primary_disabled">#a5428bca</color>
+    <color name="bbutton_primary_disabled_edge">#a5357ebd</color>
+
+    <color name="bbutton_danger">#ffd9534f</color>
+    <color name="bbutton_danger_edge">#ffd43f3a</color>
+    <color name="bbutton_danger_pressed">#ffd2322d</color>
+    <color name="bbutton_danger_pressed_edge">#ffac2925</color>
+    <color name="bbutton_danger_disabled">#a5d9534f</color>
+    <color name="bbutton_danger_disabled_edge">#a5d43f3a</color>
+
+
+    <color name="bbutton_success">#ff5cb85c</color>
+    <color name="bbutton_success_edge">#ff4cae4c</color>
+    <color name="bbutton_success_pressed">#ff47a447</color>
+    <color name="bbutton_success_pressed_edge">#ff398439</color>
+    <color name="bbutton_success_disabled">#a55cb85c</color>
+    <color name="bbutton_success_disabled_edge">#a54cae4c</color>
+
+
+    <color name="bbutton_warning_1">#fff0ad4e</color>
+    <color name="bbutton_warning_edge">#ffeea236</color>
+    <color name="bbutton_warning_pressed">#ffed9c28</color>
+    <color name="bbutton_warning_pressed_edge">#ffd58512</color>
+    <color name="bbutton_warning_disabled">#a5f0ad4e</color>
+    <color name="bbutton_warning_disabled_edge">#a5eea236</color>
+
+    <color name="bbutton_info">#ff5bc0de</color>
+    <color name="bbutton_info_edge">#ff46b8da</color>
+    <color name="bbutton_info_pressed">#ff39b3d7</color>
+    <color name="bbutton_info_pressed_edge">#ff269abc</color>
+    <color name="bbutton_info_disabled">#a55bc0de</color>
+    <color name="bbutton_info_disabled_edge">#a546b8da</color>
+
+    <color name="bbutton_default">#ffffffff</color>
+    <color name="bbutton_default_edge">#ffcccccc</color>
+    <color name="bbutton_default_pressed">#ffebebeb</color>
+    <color name="bbutton_default_pressed_edge">#ffadadad</color>
+    <color name="bbutton_default_disabled">#a5ffffff</color>
+    <color name="bbutton_default_disabled_edge">#a5cccccc</color>
+
+    <color name="bbutton_inverse">#ff0a0a0a</color>
+    <color name="bbutton_inverse_edge">#ff141414</color>
+    <color name="bbutton_inverse_pressed">#ff1f1f1f</color>
+    <color name="bbutton_inverse_pressed_edge">#ff292929</color>
+    <color name="bbutton_inverse_disabled">#a50a0a0a</color>
+    <color name="bbutton_inverse_disabled_edge">#a5141414</color>
+
+    <color name="bthumbnail_background">#ffffffff</color>
+    <color name="bthumbnail_placeholder">#e9e9e9</color>
+    <color name="bthumbnail_border">#dbdbdb</color>
+    <color name="bthumbnail_font">#7e7e7e</color>
+
+    <color name="grey">#cccdc9c9</color>
+    <color name="dark_grey">#ff555555</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="com_parse_ui_parse_login_button">#40CCCCCC</color>
+    <color name="com_parse_ui_parse_login_button_push">#30CCCCCC</color>
+    <color name="com_parse_ui_parse_login_button_focus">#35CCCCCC</color>
+    <color name="com_parse_ui_parse_login_help_button_label">#44000000</color>
+    <color name="com_parse_ui_parse_login_help_button_label_push">#FF000000</color>
+    <color name="com_parse_ui_parse_login_help_button_label_focus">#88000000</color>
+    <color name="com_parse_ui_parse_login_text_hint">#AAAAAA</color>
+    <color name="com_parse_ui_parse_login_display_text">@android:color/white</color>
+    <color name="com_parse_ui_facebook_login_button">#3B5998</color>
+    <color name="com_parse_ui_facebook_login_button_push">#2E4677</color>
+    <color name="com_parse_ui_facebook_login_button_focus">#304F8B</color>
+    <color name="com_parse_ui_twitter_login_button">#2DAAE2</color>
+    <color name="com_parse_ui_twitter_login_button_push">#2588B5</color>
+    <color name="com_parse_ui_twitter_login_button_focus">#2788BE</color>
+    <color name="green">#00ff00</color>
+    <color name="hooker_green">#49796B</color>
+    <color name="hooker_green_translucent">#5549796B</color>
+    <color name="bar_5_color">#ff05DC00</color>
+    <color name="bar_4_color">#FF8BDB01</color>
+    <color name="bar_3_color">#FFFAD402</color>
+    <color name="bar_2_color">#FFFA6902</color>
+    <color name="bar_1_color">#FFDB1D01</color>
+    <color name="glass">#99FFFFFF</color>
+    <color name="read_more_text">#5c98ff</color>
+    <color name="read_more_expanded_text">#8F5DF9</color>
+    <color name="closed_color">#FFDB1D01</color>
+
+    <color name="red_light">#ffff4444</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="green_lighter">#ffc1ff6b</color>
+    <color name="green_lightest">#fff4ff49</color>
+    <color name="orange_light">#ffffbb33</color>
+    <color name="blue_light">#ff33b5e5</color>
+
+    <color name="primary_theme_color">#FF5501</color>
+
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#FFFFFF</color>
+    <color name="abc_search_url_text_holo">#ffffb157</color>
+    <color name="green_bright">#ffc1ff6b</color>
+
+
+</resources>

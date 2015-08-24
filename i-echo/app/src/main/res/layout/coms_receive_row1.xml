@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent"
+android:focusable="false"
+android:clickable="false"
+android:focusableInTouchMode="false">
+    <TextView
+        android:id="@+id/method_entry1"
+        android:layout_width="200dp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_height="wrap_content"
+        android:hint="Text Message"
+        android:textColor="#80ff0000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/label_icon11"
+        android:layout_width="24dp"
+        android:layout_height="32dp"
+        android:src="@drawable/wifi_on"
+        android:layout_toEndOf="@+id/method_entry1"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="false"
+        android:focusable="false">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/label_icon21"
+        android:layout_width="24dp"
+        android:layout_height="32dp"
+        android:src="@drawable/roaming"
+        android:layout_toEndOf="@+id/label_icon11"
+        android:layout_marginStart="0dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="false"
+        android:focusable="false">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/callin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="In"
+        android:textSize="20sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/label_icon21"
+        android:textColor="#d5858585" />
+
+    <ImageView
+        android:id="@+id/arrowin1"
+        android:layout_width="20dp"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow_in"
+        android:layout_toEndOf="@+id/callin1"
+        android:layout_marginStart="0dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="false"
+        android:focusable="false">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/callout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Out"
+        android:textSize="20sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_toStartOf="@+id/arrowout1"
+        android:textColor="#d5858585" />
+
+    <ImageView
+        android:id="@+id/arrowout1"
+        android:layout_width="20dp"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow_out"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+    </ImageView>
+</RelativeLayout>

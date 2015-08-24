@@ -1,0 +1,15 @@
+[server IP]:192.168.1.9
+[user]
+userid:user1@echo.com
+userfirstname:John
+userlastname:Doe
+phonenumber:+1-408-390-1770
+skypeurl:carlfcao1596@skype.com
+emailurl:johndoe@gmail.com
+[target]
+userid:user2@echo.com
+userfirstname:Jane
+userlastname:Doe
+phonenumber:+1-408-390-1770
+skypeurl:carlfcao@skype.com
+emailurl:janedoe@gmail.com
